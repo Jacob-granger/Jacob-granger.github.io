@@ -1,0 +1,54 @@
+/* :root {
+
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'prima Sans Mono';
+  font-size: 3rem;
+  color: black;
+  background-color: #283a90;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 75px; */
+  z-index: 1000;
+}
+.container {
+  max-width: 200rem;
+  margin: 0 20px;
+  padding: 1.5rem 0;
+}
+
+.navbar-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
