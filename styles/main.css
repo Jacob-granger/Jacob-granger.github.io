@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  padding-top: 200px;
   font-family: 'prima Sans Mono';
   font-size: 3rem;
   color: black;
@@ -51,4 +52,8 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+}
+
+h1 {
+  display: block;
 }
