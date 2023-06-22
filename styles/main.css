@@ -22,6 +22,25 @@ body {
   letter-spacing: 1px;
 }
 
+.welcome {
+  /* outline: solid red; */
+  color: white;
+  text-align: center;
+  height: auto;
+  margin-top: 5em;
+}
+
+#greeting {
+  font-size: 4em;
+}
+
+#links {
+  margin-top: 10em;
+}
+
+.link-formating {
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -42,7 +61,7 @@ a {
   padding: 1.5rem 0;
 }
 
-.navbar-flex {
+.flex-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
