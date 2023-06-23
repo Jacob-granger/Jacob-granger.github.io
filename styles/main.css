@@ -21,7 +21,6 @@ body {
   background-color: #283a90;
   letter-spacing: 1px;
 }
-
 .welcome {
   /* outline: solid red; */
   color: white;
@@ -65,6 +64,7 @@ a {
 }
 
 .content {
+  font-size: 0.75em;
   list-style: none;
   display: flex;
   align-items: center;
