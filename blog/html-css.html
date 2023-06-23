@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS Concepts</title>
+    <title>Inline vs Inline-Block</title>
     <meta charset="UTF-8" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
   </head>
@@ -40,17 +40,46 @@
         dive into it!
       </p>
       <h3>DISPLAY: BLOCK</h3>
-      <br />
       <p>
-        First let’s describe our elements such as paragraphs and headings as
-        boxes. Our first type of box has a display type “Block”. A Block box is
-        greedy and takes up an entire line on our screen and doesn't share it
-        with other boxes. If other boxes want to join they have to find space
-        either above or below a “block” box. They will only stack on top of each
-        other, not beside each other. How much space a block box takes up can be
-        defined by its dimension, margin, and padding properties.
+        To begin our understanding let’s first look at what “block” means.
+        Consider elements (such as div) as boxes. Each box contains the content
+        we want to display and will use horizontal and vertical space on a
+        screen to display the content.
+        <br />
+        <br />
+        If a box’s display poperty is “block” we can set both its height and
+        width values. The vertical space it will use equals its height. Other
+        boxes can use the vertical space above or below that it doesn't need.
+        However, horizontally it will reserve 100% of the available screen space
+        for itself. Even if its width is less than the available space. It will
+        not share any screen space to its left or to its right. Below the green
+        highlighted lines of code show which class properties are effecting the
+        size of each box.
       </p>
-      <img src="../images/block-example.png" />
+      <img src="images/block.png" />
+      <h3>DISPLAY: INLINE</h3>
+      <p>
+        If a box display property is “inline” we can no longer set its height
+        and width values. The vertical and horizontal space it will use will be
+        the minimum amount of space required to display the content it contains.
+        Other boxes are able to use the available horizontal and vertical space
+        surrounding the “inline” box. See below the red highlighted lines of
+        code. These properties no longer have an effect on the display of the
+        box. It is just the content properties that have an effect, in this case
+        “font-size”.
+      </p>
+      <img src="images/inline.png" />
+      <h3>DISPLAY: INLINE-BLOCK</h3>
+      <p>
+        Inline-block. When a box display property is “inline-block” it will have
+        all the display attributes of an Inline box however we can now set its
+        size and width values as well. The vertical and horizontal space it will
+        use is dependent on its height and width. However, now (just like an
+        inline box) it will share available space horizontally and vertically.
+        We can see that from the code below that the width and height properties
+        are now defining the space each box uses.
+      </p>
+      <img src="images/inline-block.png" />
     </article>
   </body>
 </html>
