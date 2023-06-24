@@ -91,6 +91,12 @@ a {
   padding-right: 2rem;
 }
 
+.reverse-p {
+  padding: 1em 1em 1em 1em;
+  color: black;
+  background-color: white;
+}
+
 p {
   margin-top: 1em;
   margin-bottom: 1em;
