@@ -120,8 +120,8 @@ h3 {
   color: #283a90;
 }
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   #greeting {
     font-size: 1em;
   }
-}
+} */
