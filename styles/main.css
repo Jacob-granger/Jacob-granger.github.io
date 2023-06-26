@@ -17,7 +17,7 @@ body {
   padding-left: 200px;
   padding-right: 200px;
   font-family: 'prima Sans Mono';
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   background-color: #283a90;
   letter-spacing: 1px;
@@ -68,19 +68,25 @@ li {
   z-index: 1000;
 }
 .container {
-  max-width: 200rem;
+  max-width: 100%;
   margin: 0 20px;
   padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-container {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  max-width: 100%;
+}
+.font-size {
+  font-size: 1em;
 }
 
 .content {
-  font-size: 0.75em;
+  font-size: 1em;
   list-style: none;
   display: flex;
   align-items: center;
@@ -118,6 +124,11 @@ h3 {
 .heading-white {
   background-color: white;
   color: #283a90;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* @media (max-width: 850px) {
