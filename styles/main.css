@@ -37,7 +37,6 @@ body {
 #links {
   font-weight: bold;
   color: black;
-
   margin: 2em auto auto auto;
   width: 100%;
   padding: 0.5em 2em 1em 2em;
@@ -50,17 +49,18 @@ a {
   color: inherit;
 }
 
-ul {
+#list-menu {
   width: 20vw;
 }
 
-li {
+.list-item {
   margin-top: 0.5em;
 }
 
 .header {
   background-color: white;
   position: fixed;
+  padding: 2px 2px 2px 2px;
   top: 0;
   left: 0;
   width: 100%;
@@ -68,16 +68,16 @@ li {
   z-index: 1000;
 }
 .container {
-  max-width: 100%;
+  max-width: 100;
   margin: 0 20px;
   padding: 1.5rem 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .flex-container {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   max-width: 100%;
 }
@@ -131,12 +131,24 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 500px) {
+@media all and (max-width: 850px) {
   body {
     padding-left: 1em;
     padding-right: 1em;
   }
-  .post-content {
-    font-size: 3em;
+  .welcome {
+    font-size: 0.5em;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #list-menu {
+    width: 100%;
+  }
+  .list-item {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
