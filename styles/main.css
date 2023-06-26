@@ -136,4 +136,7 @@ img {
     padding-left: 1em;
     padding-right: 1em;
   }
+  .post-content {
+    font-size: 3em;
+  }
 }
