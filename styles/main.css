@@ -13,9 +13,9 @@ html {
 
 body {
   margin-bottom: 10em;
-  padding-top: 150px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-top: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
   font-family: 'prima Sans Mono';
   font-size: 2rem;
   color: black;
@@ -131,8 +131,9 @@ img {
   max-width: 100%;
 }
 
-/* @media (max-width: 850px) {
-  #greeting {
-    font-size: 1em;
+@media (max-width: 500px) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
   }
-} */
+}
