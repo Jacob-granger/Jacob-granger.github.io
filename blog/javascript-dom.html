@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Fundamentals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="container">
+        <a href="../index.html">
+          <h1>J-GRANGER</h1>
+        </a>
+
+        <div class="menu">
+          <ul class="content">
+            <li>
+              <a href="#">CONTENT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <article class="post-content">
+      <p>30/06/2023</p>
+      <h2 class="heading-white post-title">JavaScript Fundamentals</h2>
+      <h3>What is JavaScript and its relationship to HTML and CSS?</h3>
+      <p>
+        Let’s pretend a website is a car. HTML forms the structure of the car
+        and can be represented as the body and chassis defining where all
+        elements of a car are positioned such as wheels, doors, windows, brakes,
+        seats, steering wheel etc. Now let’s add CSS to the car. CSS simply
+        makes the car look cool, it adds paint color, rims, tinted windows,
+        fluffy seat covers etc attributes that makes the car unique and
+        desirable for people to buy. At this point we can tell there’s a car in
+        front of us and we like the look of it, but when we hop in the driver's
+        seat and turn the key nothing happens! The car isn’t responsive yet. To
+        do this we need to add JavaScript! Adding JavaScript adds parts to our
+        car such as an engine, sensors and electrical components that allow us
+        to operate and use the car for its intended purpose.
+      </p>
+      <hr />
+      <h3>Control flow and loops, what does this mean?</h3>
+      <p>
+        Pretend you’re lighting a fire. To build a successful fire you need to
+        follow a set of steps in a specific order to achieve this. For example:
+        Make tinder bed, place kindling on top, light match, stoke fire. This
+        order of actions we need to take to light a fire is called the control
+        flow. In developer terms the control flow is the order in which a
+        computer executes statements of code in a file. The default control flow
+        in computing is to execute lines of code from top to bottom. Therefore
+        we need to make sure the order is correct because if the wrong line of
+        code is executed before another, our code will crash - the same way if
+        we light the match before we gather anything to burn there will be no
+        fire! Take a look at the code example below.
+      </p>
+      <img src="images/control-flow-1.png" />
+      <p>
+        Sometimes we need to make different decisions based on specific
+        conditions before progressing to the next step. For example when adding
+        a piece of wood to our fire we need to check if it is dry or wet.
+        Depending on which condition is met a different action is required
+        before proceeding. In computing we can use control statements to direct
+        the control flow. In this instance we would use a conditional statement
+        which can be used to execute a different line of code if a condition is
+        met. Check out the code snippet below.
+      </p>
+      <img src="images/control-flow-2.png" />
+      <p>
+        Using an "if" and "else" statement this fuction first checks if the wood
+        is dry. If yes? Then add wood to the fire. If the wood isn't dry it
+        doesnt add to the fire an instead moves to the next line and checks to
+        see if the wood is wet. If the wood is wet it tells us to not add the
+        piece to the fire.
+      </p>
+      <p>
+        Sometimes we need to repeat a process multiple times. Say we’ve run out
+        of wood and need to chop more. We have one large piece of wood and we
+        want to chop it into 4 pieces. We need to repeat the action of splitting
+        it more than once to have 4 pieces. If we were to code this we would use
+        a control statement called a loop. The computer will execute this line
+        of code as many time as it’s told before moving onto the next line of
+        code. This piece of code shows how we can code a "for" loop.
+      </p>
+      <img src="images/control-flow-3.png" />
+      <p>
+        First we let the computer know how many "piecesOfWood" we have (1), then
+        we tell it to repeat "split wood again" until "piecesOfWood" = 4. the
+        "++" will add "1" to our "pieceOfWood" count each time the action "split
+        wood again" is executed. Once we have 4 pieces the computer will move
+        onto the next bit of code.
+      </p>
+      <hr />
+      <h3>What is the DOM and how do we interact with it?</h3>
+      <p>
+        The DOM or Document Object Model can be viewed as a kind of tool that
+        allows a browser to interact with the pages that make up the website.<br /><br />
+        Sometimes when we visit websites we want information to update/change as
+        a response to different tasks we perform whilst navigating them. For
+        example when we add an item to our cart we want that little number
+        representing how many items are in our cart to increase by 1. For this
+        to happen the website needs to be dynamic. The DOM is responsible for
+        this dynamic response.<br /><br />
+        The DOM creates a version of the webpage that the browser can talk to
+        and manipulate if it needs to using JavaScript, we call this the
+        “document”. This document is divided into what we call “objects”.<br /><br />
+        Each object represents all the different elements on our page such as
+        heading, paragraphs and buttons (or our cart). The DOM has tools that
+        can change and manipulate objects. In response to triggers from the user
+        such as button clicks the DOM can target and update objects by changing
+        their properties or cause action by calling methods. Using the DOM we
+        are able to create exciting, dynamic websites that customize our user
+        experience.
+      </p>
+      <hr />
+      <h3>What's the difference between "arrays" and "objects"?</h3>
+      <p>
+        Both arrays and objects can be used for storing and retrieving data.
+        However, the key difference is HOW they store and retrieve this data.<br /><br />Arrays
+        store an ordered collection of items/data. Say we have a box of 5
+        spanners. The array in this case is represented as the box, and the
+        spanners are the collection of items the array holds. Each spanner has a
+        different length and has its own slot within the box numbered 0-4 (slot
+        1 = 0, slot 2 = 1, … slot 5 = 4). It is important to note that an array
+        organizes the items it contains by index values starting from 0. The
+        slots within the box represent the index values of items stored in an
+        array, each item having its own unique index value. If I was to ask
+        someone to retrieve a spanner for me I would have to tell them the
+        number of the slot that the spanner is in for them to be able to
+        retrieve the right one. The same goes for arrays. To retrieve an item
+        from an array we need to specify the index value of the item we are
+        trying to access. Take a look at the code below.
+      </p>
+      <img src="images/arrays.png" />
+      <p>
+        See how in order to retrieve Spanner2 within the array we need use the
+        index number '1' rather than 2 even though it's the second item in the
+        list.
+      </p>
+      <p>
+        Objects on the other hand are an unordered collection of items/values.
+        Let’s use one of our spanners. A spanner in this case is representing an
+        object. It has some information on it telling us what type and size it
+        is. These two attributes are represented by the “keys” type and size.
+        Each “key” holds a corresponding value relating to the object. If I
+        asked someone to find me a 10mm wrench spanner they would need to check
+        the key “size” for “10mm” and the key “type” for “wrench”. The same goes
+        for objects in JavaScript, to retrieve a specific value from an object
+        we need to specify the key of the value that we are retrieving. Check
+        out the code below.
+      </p>
+      <img src="images/objects.png" /><br /><br />
+      <hr />
+      <h3>Functions - What are they and why are they helpful?</h3>
+      <p>
+        Functions are like little reuseable packages of code that perform some
+        sort of procedure. Essentially there’s two parts to a function: Defining
+        it and calling it.<br /><br />
+        First we need to define the function. Say there’s a task we want to
+        complete over and over and requires writing numerous lines of code every
+        time we want to action it. Instead of typing out each line of code every
+        time we want to complete the task we can assign the block of code to a
+        function name. The function name now represents our wee (or large) block
+        of code.<br /><br />
+        Now we can call the function. Everytime we want to action the task we
+        defined in our function, instead of typing it out again, we just use the
+        function name. By doing this we save time and it also makes our
+        JavaScript code more readable, organized and reusable. Another great
+        benefit of this is if we want to change any part of the task being
+        executed we only have to make changes once as we only need to update the
+        section where we defined the function.
+      </p>
+    </article>
+  </body>
+</html>
