@@ -144,6 +144,26 @@ img {
   color: #283a90;
 }
 
+#img {
+  width: 100%;
+}
+
+/* Te-whare-tapa-wha */
+
+.tewhare-container {
+  color: black;
+  margin-top: 50px;
+  border: white;
+}
+.heading {
+  padding: 15px;
+}
+.list {
+  background-color: #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 850px) {
   body {
     padding-left: 1em;
