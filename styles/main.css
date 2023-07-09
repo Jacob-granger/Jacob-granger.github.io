@@ -144,6 +144,13 @@ img {
   color: #283a90;
 }
 
+.links-blog {
+  color: white;
+}
+.links-blog:hover {
+  color: red;
+}
+
 #img {
   width: 100%;
 }
